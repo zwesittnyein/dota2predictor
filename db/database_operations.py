@@ -55,7 +55,7 @@ def insert_match_result(match_id, model_prediction, **kwargs):
 
         # Check for an existing record with the same match_id
         existing_record = (
-            session.query(History).filter(History.match_id == match_id).first()
+            session.query().filter(History.match_id == match_id).first()
         )
         if existing_record:
             logger.info(

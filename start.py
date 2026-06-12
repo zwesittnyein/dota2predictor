@@ -20,6 +20,9 @@ from structure.struct import Markups, CallbackTriggers, Icons
 logger = logging.getLogger(__name__)
 bot = TeleBot(telegram_key)
 
+logger.info("HELLO FROM ZWE - MY SECOND EDIT")
+
+
 
 class CallbackProcessor:
     @staticmethod
@@ -75,6 +78,7 @@ class CallbackProcessor:
     def send_history_csv(call):
         try:
             logger.info("Starting to send history CSV...")
+            
 
             # Create a BytesIO buffer
             csv_buffer = BytesIO()

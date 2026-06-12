@@ -11,6 +11,8 @@ logger = logging.getLogger(__name__)
 Base = declarative_base()
 
 
+
+
 class History(Base):
     __tablename__ = "history"
 
